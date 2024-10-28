@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <title>PT Technosphere</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
 
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo_doang.png" type="image/png">
+
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet" />
 
     <!-- Icon Font Stylesheet -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
@@ -27,665 +33,622 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-      <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
     </div>
     <!-- Spinner End -->
 
     <!-- Topbar Start -->
     <div class="container-fluid topbar px-0 d-none d-lg-block">
-      <div class="container px-0">
-        <div class="row gx-0 align-items-center" style="height: 45px">
-          <div class="col-lg-8 text-center text-lg-start mb-lg-0">
-            <div class="d-flex flex-wrap">
-              <a href="#" class="text-muted me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+62812-9526-4742</a>
-              <a href="#" class="text-muted me-0"><i class="fas fa-envelope text-primary me-2"></i>Technosphere@gmail.com</a>
+        <div class="container px-0">
+            <div class="row gx-0 align-items-center" style="height: 45px">
+                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="#" class="text-muted me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Jakarta</a>
+                        <a href="#" class="text-muted me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+62812-9526-4742</a>
+                        <a href="#" class="text-muted me-0"><i class="fas fa-envelope text-primary me-2"></i>Technosphere@gmail.com</a>
+                    </div>
+                </div>
             </div>
-          </div>
-          </div>
         </div>
-      </div>
+    </div>
     </div>
     <!-- Topbar End -->
 
     <!-- Navbar & Hero Start -->
     <div class="container-fluid sticky-top px-0">
-      <div class="position-absolute bg-dark" style="left: 0; top: 0; width: 100%; height: 100%"></div>
-      <div class="container px-0">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-white py-3 px-4">
-          <a href="index.html" class="navbar-brand p-0 d-flex align-items-center">
-            <img class="img-fluid" src="img/logo_doang.png" alt="Logo" style="width: 50px; height: auto" />
-            <h1 class="text-primary m-0 ms-3">Technosphere</h1>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="fa fa-bars"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0">
-              <a href="index.html" class="nav-item nav-link active">Home</a>
-              <a href="#about" class="nav-item nav-link">About</a>
-              <a href="#services" class="nav-item nav-link">Services</a>
-              <a href="#certificate" class="nav-item nav-link">Certificate</a>
-              <a href="#project" class="nav-item nav-link">Projects</a>
-              <a href="#team" class="nav-item nav-link">Team</a>
-              <a href="#location" class="nav-item nav-link">Location</a>
-              <a href="#faqs" class="nav-item nav-link">FAQs</a>
-            </div>
-          </div>
-        </nav>
-      </div>
+        <div class="position-absolute bg-dark" style="left: 0; top: 0; width: 100%; height: 100%"></div>
+        <div class="container px-0">
+            <nav class="navbar navbar-expand-lg navbar-dark py-3 px-4">
+                <a href="index.html" class="navbar-brand p-0 d-flex align-items-center">
+                    <img class="img-fluid" src="img/logo_doang.png" alt="Logo" style="width: 50px; height: auto" />
+                    <h1 class="text m-0" style="background: linear-gradient(to right, #5f87f5, #3a3aff, #d300d3); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                        Technosphere
+                    </h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="#home" class="nav-item nav-link active">Home</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#services" class="nav-item nav-link">Services</a>
+                        <a href="#certificate" class="nav-item nav-link">Certificate</a>
+                        <a href="#project" class="nav-item nav-link">Projects</a>
+                        <a href="#team" class="nav-item nav-link">Team</a>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </div>
     <!-- Navbar & Hero End -->
 
-    <!-- Modal Search Start -->
-    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content rounded-0">
-          <div class="modal-header">
-            <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body d-flex align-items-center">
-            <div class="input-group w-75 mx-auto d-flex">
-              <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1" />
-              <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal Search End -->
-
     <!-- Carousel Start -->
-    <div class="header-carousel owl-carousel">
-      <div class="header-carousel-item">
-        <div class="header-carousel-item-img-1">
-          <img src="img/carousel-1.jpg" class="img-fluid w-100" alt="Image" />
+    <div class="header-carousel owl-carousel" id="home">
+        <div class="header-carousel-item">
+            <div class="header-carousel-item-img-1">
+                <img src="img/carousel-1.jpg" class="img-fluid w-100" alt="Image" />
+            </div>
+            <div class="carousel-caption">
+                <div class="carousel-caption-inner text-start p-3">
+                    <h1 class="display-1 text-capitalize text-white mb-4 fadeInUp animate__animated"
+                        data-animation="fadeInUp" data-delay="1.3s" style="animation-delay: 1.3s"> Transformasikan Bisnis Anda dengan Solusi Digital Inovatif.</h1>
+                    <p class="mb-5 fs-5 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.5s"
+                        style="animation-delay: 1.5s">
+                        Kami menyediakan solusi perangkat lunak yang dirancang khusus untuk kebutuhan bisnis Anda, memastikan pertumbuhan yang berkelanjutan dan efisiensi yang maksimal.
+                    </p>
+                    <a class="btn btn-primary rounded-pill py-3 px-5 mb-4 me-4 fadeInUp animate__animated"
+                        data-animation="fadeInUp" data-delay="1.5s" style="animation-delay: 1.7s" href="#contact">Contact Now</a>
+                </div>
+            </div>
         </div>
-        <div class="carousel-caption">
-          <div class="carousel-caption-inner text-start p-3">
-            <h1 class="display-1 text-capitalize text-white mb-4 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.3s" style="animation-delay: 1.3s">The most prestigious Investments company in worldwide.</h1>
-            <p class="mb-5 fs-5 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.5s" style="animation-delay: 1.5s">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-            </p>
-            <a class="btn btn-primary rounded-pill py-3 px-5 mb-4 me-4 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.5s" style="animation-delay: 1.7s" href="#">Apply Now</a>
-            <a class="btn btn-dark rounded-pill py-3 px-5 mb-4 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.5s" style="animation-delay: 1.7s" href="#">Read More</a>
-          </div>
+        <div class="header-carousel-item mx-auto">
+            <div class="header-carousel-item-img-2">
+                <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="Image" />
+            </div>
+            <div class="carousel-caption">
+                <div class="carousel-caption-inner text-center p-3">
+                    <h1 class="display-1 text-capitalize text-white mb-4">Memberdayakan Bisnis Melalui Teknologi.</h1>
+                    <p class="mb-5 fs-5">Dengan teknologi yang terus berkembang, kami membantu bisnis Anda beradaptasi dan maju di era digital melalui aplikasi yang efektif dan efisien.</p>
+                    <a class="btn btn-primary rounded-pill py-3 px-5 mb-4 me-4" href="#contact">Contact Now</a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="header-carousel-item mx-auto">
-        <div class="header-carousel-item-img-2">
-          <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="Image" />
+        <div class="header-carousel-item">
+            <div class="header-carousel-item-img-3">
+                <img src="img/carousel-3.jpg" class="img-fluid w-100" alt="Image" />
+            </div>
+            <div class="carousel-caption">
+                <div class="carousel-caption-inner text-end p-3">
+                    <h1 class="display-1 text-capitalize text-white mb-4"> Solusi Digital Khusus untuk Setiap Industri.</h1>
+                    <p class="mb-5 fs-5">Dari desain hingga implementasi, kami menciptakan solusi digital yang dapat diandalkan untuk memenuhi setiap tantangan bisnis Anda.</p>
+                    <a class="btn btn-primary rounded-pill py-3 px-5 mb-4 me-4" href="#contact">Contact Now</a>
+                </div>
+            </div>
         </div>
-        <div class="carousel-caption">
-          <div class="carousel-caption-inner text-center p-3">
-            <h1 class="display-1 text-capitalize text-white mb-4">The most prestigious Investments company in worldwide.</h1>
-            <p class="mb-5 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-            <a class="btn btn-primary rounded-pill py-3 px-5 mb-4 me-4" href="#">Apply Now</a>
-            <a class="btn btn-dark rounded-pill py-3 px-5 mb-4" href="#">Read More</a>
-          </div>
-        </div>
-      </div>
-      <div class="header-carousel-item">
-        <div class="header-carousel-item-img-3">
-          <img src="img/carousel-3.jpg" class="img-fluid w-100" alt="Image" />
-        </div>
-        <div class="carousel-caption">
-          <div class="carousel-caption-inner text-end p-3">
-            <h1 class="display-1 text-capitalize text-white mb-4">The most prestigious Investments company in worldwide.</h1>
-            <p class="mb-5 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-            <a class="btn btn-primary rounded-pill py-3 px-5 mb-4 me-4" href="#">Apply Now</a>
-            <a class="btn btn-dark rounded-pill py-3 px-5 mb-4" href="#">Read More</a>
-          </div>
-        </div>
-      </div>
     </div>
     <!-- Carousel End -->
 
     <!-- About Start -->
     <div class="container-fluid about bg-light py-5" id="about">
-      <div class="container py-5">
-        <div class="row g-5 align-items-center">
-          <div class="col-lg-6 col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
-            <div class="about-img">
-              <img src="img/company.jpg" class="img-fluid w-100 rounded-top bg-white" alt="Image" />
-            </div>
-          </div>
-          <div class="col-lg-6 col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
-            <h4 class="text-primary">About Us</h4>
-            <h1 class="display-5 mb-4">Inovasi Digital untuk Masa Depan Bisnis Anda.</h1>
-            <p class="text ps-4 mb-4">
-              PT TechnoSphere Digital Solution Indonesia adalah perusahaan yang bergerak di bidang teknologi informasi dan layanan digital, berfokus pada pengembangan aplikasi perangkat lunak yang inovatif dan solusi teknologi yang
-              terintegrasi. Kami menyediakan berbagai layanan, termasuk pengembangan aplikasi mobile dan web, desain UI/UX, serta integrasi sistem untuk membantu klien dalam meningkatkan efisiensi operasional dan daya saing bisnis di era
-              digital.
-            </p>
-            <h4 class="text-primary">Visi</h4>
-            <p class="text ps-4 mb-4">“Menjadi penyedia solusi digital terdepan di Indonesia yang mendukung transformasi bisnis melalui inovasi teknologi dan layanan berkualitas, serta menjadi mitra strategis perusahaan di era digital.”</p>
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="about-img">
+                        <img src="img/company.jpg" class="img-fluid w-100 rounded-top bg-white" alt="Image" />
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
+                    <h4 class="text-primary">About Us</h4>
+                    <h1 class="display-5 mb-4">Inovasi Digital untuk Masa Depan Bisnis Anda.</h1>
+                    <p class="text ps-4 mb-4">
+                        PT TechnoSphere Digital Solution Indonesia adalah perusahaan yang bergerak di bidang teknologi
+                        informasi dan layanan digital, berfokus pada pengembangan aplikasi perangkat lunak yang inovatif
+                        dan solusi teknologi yang
+                        terintegrasi. Kami menyediakan berbagai layanan, termasuk pengembangan aplikasi mobile dan web,
+                        desain UI/UX, serta integrasi sistem untuk membantu klien dalam meningkatkan efisiensi
+                        operasional dan daya saing bisnis di era
+                        digital.
+                    </p>
+                    <h4 class="text-primary">Visi</h4>
+                    <p class="text ps-4 mb-4">“Menjadi penyedia solusi digital terdepan di Indonesia yang mendukung
+                        transformasi bisnis melalui inovasi teknologi dan layanan berkualitas, serta menjadi mitra
+                        strategis perusahaan di era digital.”</p>
 
-            <h4 class="text-primary">Misi</h4>
-            <div class="row g-1 text ps-4 mb-5">
-              <div class="col-lg-6">
-                <p class="text-secondary"><i class="fas fa-check-circle text-primary me-1"></i> Mengembangkan aplikasi inovatif yang meningkatkan efisiensi bisnis klien.</p>
-                <p class="text-secondary mb-0"><i class="fas fa-check-circle text-primary me-1"></i> Menyediakan layanan software, web, dan desain digital yang berkualitas tinggi.</p>
-                <p class="text-secondary mt-4"><i class="fas fa-check-circle text-primary me-1"></i> Membangun hubungan jangka panjang dengan klien melalui solusi tepat guna dan pelayanan terbaik.</p>
-              </div>
-              <div class="col-lg-6">
-                <p class="text-secondary"><i class="fas fa-check-circle text-primary me-1"></i> Meningkatkan kompetensi tim untuk selalu mengikuti perkembangan teknologi.</p>
-                <p class="text-secondary mb-0"><i class="fas fa-check-circle text-primary me-1"></i> Menciptakan produk digital yang inovatif dan bernilai bagi pengguna.</p>
-              </div>
+                    <h4 class="text-primary">Misi</h4>
+                    <div class="row g-1 text ps-4 mb-5">
+                        <div class="col-lg-6">
+                            <p class="text-secondary"><i class="fas fa-check-circle text-primary me-1"></i>
+                                Mengembangkan aplikasi inovatif yang meningkatkan efisiensi bisnis klien.</p>
+                            <p class="text-secondary mb-0"><i class="fas fa-check-circle text-primary me-1"></i>
+                                Menyediakan layanan software, web, dan desain digital yang berkualitas tinggi.</p>
+                            <p class="text-secondary mt-4"><i class="fas fa-check-circle text-primary me-1"></i>
+                                Membangun hubungan jangka panjang dengan klien melalui solusi tepat guna dan pelayanan
+                                terbaik.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="text-secondary"><i class="fas fa-check-circle text-primary me-1"></i> Meningkatkan
+                                kompetensi tim untuk selalu mengikuti perkembangan teknologi.</p>
+                            <p class="text-secondary mb-0"><i class="fas fa-check-circle text-primary me-1"></i>
+                                Menciptakan produk digital yang inovatif dan bernilai bagi pengguna.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <!-- <div class="row g-4 justify-content-between mb-5">
-              <div class="col-xl-5"><a href="#" class="btn btn-primary rounded-pill py-3 px-5">Discover More</a></div> -->
-              <!-- <div class="col-xl-7 mb-5">
-                <div class="about-customer d-flex position-relative">
-                  <img src="img/customer-img-1.jpg" class="img-fluid btn-xl-square position-absolute" style="left: 0; top: 0" alt="Image" />
-                  <img src="img/customer-img-2.jpg" class="img-fluid btn-xl-square position-absolute" style="left: 45px; top: 0" alt="Image" />
-                  <img src="img/customer-img-3.jpg" class="img-fluid btn-xl-square position-absolute" style="left: 90px; top: 0" alt="Image" />
-                  <img src="img/customer-img-1.jpg" class="img-fluid btn-xl-square position-absolute" style="left: 135px; top: 0" alt="Image" />
-                  <div class="position-absolute text-dark" style="left: 220px; top: 10px">
-                    <p class="mb-0">5m+ Trusted</p>
-                    <p class="mb-0">Global Customers</p>
-                  </div>
-                </div>
-              </div> -->
-            <!-- </div> -->
-            <!-- <div class="row g-4 text-center align-items-center justify-content-center">
-              <div class="col-sm-4">
-                <div class="bg-primary rounded p-4">
-                  <div class="d-flex align-items-center justify-content-center">
-                    <span class="counter-value fs-1 fw-bold text-dark" data-toggle="counter-up">32</span>
-                    <h4 class="text-dark fs-1 mb-0" style="font-weight: 600; font-size: 25px">k+</h4>
-                  </div>
-                  <div class="w-100 d-flex align-items-center justify-content-center">
-                    <p class="text-white mb-0">Project Complete</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="bg-dark rounded p-4">
-                  <div class="d-flex align-items-center justify-content-center">
-                    <span class="counter-value fs-1 fw-bold text-white" data-toggle="counter-up">21</span>
-                    <h4 class="text-white fs-1 mb-0" style="font-weight: 600; font-size: 25px">+</h4>
-                  </div>
-                  <div class="w-100 d-flex align-items-center justify-content-center">
-                    <p class="mb-0">Years Of Experience</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="bg-primary rounded p-4">
-                  <div class="d-flex align-items-center justify-content-center">
-                    <span class="counter-value fs-1 fw-bold text-dark" data-toggle="counter-up">97</span>
-                    <h4 class="text-dark fs-1 mb-0" style="font-weight: 600; font-size: 25px">+</h4>
-                  </div>
-                  <div class="w-100 d-flex align-items-center justify-content-center">
-                    <p class="text-white mb-0">Team Members</p>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-          </div>
         </div>
-      </div>
     </div>
     <!-- About End -->
 
     <!-- Services Start -->
     <div class="container-fluid service py-5" id="services">
-      <div class="container py-5">
-        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px">
-          <h4 class="text-primary">Our Services</h4>
-          <h1 class="display-4">Offering the Best Technosphere Services</h1>
-        </div>
-        <div class="row g-4 justify-content-center">
-          <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="service-item bg-light rounded">
-              <div class="service-img">
-                <img src="img/web_development.jpg" class="img-fluid w-100 rounded-top" alt="" />
-              </div>
-              <div class="service-content text-center p-4" style="height: 350px;">
-                <div class="service-content-inner">
-                  <a href="#" class="h4 mb-4 d-inline-flex text-start"><i class="fas  fa-2x me-2"></i> Web Development</a>
-                  <p class="mb-4" style="text-align: justify">
-                    Kami menyediakan layanan pengembangan website yang inovatif dan berkualitas tinggi. Dengan tim yang berpengalaman, kami mampu menciptakan website yang responsif, modern, dan sesuai dengan kebutuhan bisnis Anda
-                  </p>
-                </div>
-              </div>
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px">
+                <h4 class="text-primary">Our Services</h4>
+                <h1 class="display-4">Offering the Best Technosphere Services</h1>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="service-item bg-light rounded">
-              <div class="service-img">
-                <img src="img/uiux.jpg" class="img-fluid w-100 rounded-top" alt="" />
-              </div>
-              <div class="service-content text-center p-4" style="height: 350px;">
-                <div class="service-content-inner">
-                  <a href="#" class="h4 mb-4 d-inline-flex text-start"><i class="fas fa-2x me-2"></i> UI/UX Design</a>
-                  <p class="mb-4" style="text-align: justify">Kami menawarkan layanan desain UI/UX yang berfokus pada menciptakan pengalaman pengguna yang intuitif, menyenangkan, dan juga mudah digunakan.</p>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-light rounded">
+                        <div class="service-img">
+                            <img src="img/web_development.jpg" class="img-fluid w-100 rounded-top" alt="" />
+                        </div>
+                        <div class="service-content text-center p-4" style="height: 350px;">
+                            <div class="service-content-inner">
+                                <a href="#" class="h4 mb-4 d-inline-flex text-start"><i class="fas  fa-2x me-2"></i> Web
+                                    Development</a>
+                                <p class="mb-4" style="text-align: justify">
+                                    Kami menyediakan layanan pengembangan website yang inovatif dan berkualitas tinggi.
+                                    Dengan tim yang berpengalaman, kami mampu menciptakan website yang responsif,
+                                    modern, dan sesuai dengan kebutuhan bisnis Anda
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="service-item bg-light rounded">
-              <div class="service-img">
-                <img src="img/jarkom.jpg" class="img-fluid w-100 rounded-top" alt="" />
-              </div>
-              <div class="service-content text-center p-4" style="height: 350px;">
-                <div class="service-content-inner">
-                  <a href="#" class="h4 mb-4 d-inline-flex text-start"><i class="fas fa-2x me-2"></i> Jaringan Komputer</a>
-                  <p class="mb-4" style="text-align: justify">Kami memiliki tim ahli di bidang teknologi jaringan, kami merancang, menginstal, dan memelihara infrastruktur jaringan yang aman dan efisien, baik untuk skala kecil maupun besar.</p>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded">
+                        <div class="service-img">
+                            <img src="img/uiux.jpg" class="img-fluid w-100 rounded-top" alt="" />
+                        </div>
+                        <div class="service-content text-center p-4" style="height: 350px;">
+                            <div class="service-content-inner">
+                                <a href="#" class="h4 mb-4 d-inline-flex text-start"><i class="fas fa-2x me-2"></i>
+                                    UI/UX Design</a>
+                                <p class="mb-4" style="text-align: justify">Kami menawarkan layanan desain UI/UX yang
+                                    berfokus pada menciptakan pengalaman pengguna yang intuitif, menyenangkan, dan juga
+                                    mudah digunakan.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-            <div class="service-item bg-light rounded">
-              <div class="service-img">
-                <img src="img/graphic_design.jpg" class="img-fluid w-100 rounded-top" alt="" />
-              </div>
-              <div class="service-content text-center p-4" style="height: 350px;">
-                <div class="service-content-inner">
-                  <a href="#" class="h4 mb-4 d-inline-flex text-start"><i class="fas fa-2x me-2"></i> Graphic Design</a>
-                  <p class="mb-4" style="text-align: justify">Kami menawarkan desain yang menarik, relevan. Mulai dari desain logo, brosur, materi promosi, hingga konten visual digital, kami siap membantu Anda menyampaikan pesan merek dengan cara yang estetis dan efektif.</p>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-light rounded">
+                        <div class="service-img">
+                            <img src="img/jarkom.jpg" class="img-fluid w-100 rounded-top" alt="" />
+                        </div>
+                        <div class="service-content text-center p-4" style="height: 350px;">
+                            <div class="service-content-inner">
+                                <a href="#" class="h4 mb-4 d-inline-flex text-start"><i class="fas fa-2x me-2"></i>
+                                    Jaringan Komputer</a>
+                                <p class="mb-4" style="text-align: justify">Kami memiliki tim ahli di bidang teknologi
+                                    jaringan, kami merancang, menginstal, dan memelihara infrastruktur jaringan yang
+                                    aman dan efisien, baik untuk skala kecil maupun besar.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item bg-light rounded">
+                        <div class="service-img">
+                            <img src="img/graphic_design.jpg" class="img-fluid w-100 rounded-top" alt="" />
+                        </div>
+                        <div class="service-content text-center p-4" style="height: 350px;">
+                            <div class="service-content-inner">
+                                <a href="#" class="h4 mb-4 d-inline-flex text-start"><i class="fas fa-2x me-2"></i>
+                                    Graphic Design</a>
+                                <p class="mb-4" style="text-align: justify">Kami menawarkan desain yang menarik,
+                                    relevan. Mulai dari desain logo, brosur, materi promosi, hingga konten visual
+                                    digital, kami siap membantu Anda menyampaikan pesan merek dengan cara yang estetis
+                                    dan efektif.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-          <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-            <div class="service-item bg-light rounded">
-              <div class="service-img">
-                <img src="img/mobile_app.jpg" class="img-fluid w-100 rounded-top" alt="" />
-              </div>
-              <div class="service-content text-center p-4" style="height: 350px;">
-                <div class="service-content-inner">
-                  <a href="#" class="h4 mb-4 d-inline-flex text-start"><i class="fas fa-2x me-2"></i>Mobile App</a>
-                  <p class="mb-4" style="text-align: justify">Kami menghadirkan solusi pengembangan aplikasi mobile yang inovatif dan sesuai dengan kebutuhan bisnis modern. Dengan fokus pada performa, desain yang responsif, dan pengalaman pengguna yang optimal, kami menciptakan aplikasi mobile yang dapat berjalan mulus di platform Android dan iOS.</p>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item bg-light rounded">
+                        <div class="service-img">
+                            <img src="img/mobile_app.jpg" class="img-fluid w-100 rounded-top" alt="" />
+                        </div>
+                        <div class="service-content text-center p-4" style="height: 350px;">
+                            <div class="service-content-inner">
+                                <a href="#" class="h4 mb-4 d-inline-flex text-start"><i
+                                        class="fas fa-2x me-2"></i>Mobile App</a>
+                                <p class="mb-4" style="text-align: justify">Kami menghadirkan solusi pengembangan
+                                    aplikasi mobile yang inovatif dan sesuai dengan kebutuhan bisnis modern. Dengan
+                                    fokus pada performa, desain yang responsif, dan pengalaman pengguna yang optimal,
+                                    kami menciptakan aplikasi mobile yang dapat berjalan mulus di platform Android dan
+                                    iOS.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-            <div class="service-item bg-light rounded">
-              <div class="service-img">
-                <img src="img/cloud_computing.jpg" class="img-fluid w-100 rounded-top" alt="" />
-              </div>
-              <div class="service-content text-center p-4" style="height: 350px;">
-                <div class="service-content-inner">
-                  <a href="#" class="h4 mb-4 d-inline-flex text-start"><i class="fas fa-2x me-2"></i> Cloud Computing</a>
-                  <p class="mb-4" style="text-align: justify">Kami memberikan layanan pengelolaan dan migrasi cloud kepada klien untuk menyimpan, mengelola, dan mengakses data mereka secara aman di cloud.</p>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item bg-light rounded">
+                        <div class="service-img">
+                            <img src="img/cloud_computing.jpg" class="img-fluid w-100 rounded-top" alt="" />
+                        </div>
+                        <div class="service-content text-center p-4" style="height: 350px;">
+                            <div class="service-content-inner">
+                                <a href="#" class="h4 mb-4 d-inline-flex text-start"><i class="fas fa-2x me-2"></i>
+                                    Cloud Computing</a>
+                                <p class="mb-4" style="text-align: justify">Kami memberikan layanan pengelolaan dan
+                                    migrasi cloud kepada klien untuk menyimpan, mengelola, dan mengakses data mereka
+                                    secara aman di cloud.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
     <!-- Services End -->
 
     <!-- certificate Start -->
-    <div class="container-fluid project pb-5" id="certificate">
-      <div class="container">
-          <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px">
-              <h4 class="text-primary">Our Certificate</h4>
-              <h1 class="display-4">Latest our Certificate</h1>
-          </div>
-          <div class="project-carousel owl-carousel wow fadeInUp" data-wow-delay="0.1s">
-              <div class="project-item h-100 wow fadeInUp" data-wow-delay="0.1s">
-                  <div class="project-img">
-                      <img src="img/Sertifikat MSIB 6 - Zahidan Ardhiansyah_page-0001.jpg" class="img-fluid w-100 rounded" alt="Image" />
-                  </div>
-              </div>
-              <div class="project-item h-100 wow fadeInUp" data-wow-delay="0.3s">
-                  <div class="project-img">
-                      <img src="img/sertif_rifqi.png" class="img-fluid w-100 rounded" alt="Image" />
-                  </div>
-              </div>
-              <div class="project-item h-100">
-                  <div class="project-img">
-                      <img src="img/sertif_okky.jpeg" class="img-fluid w-100 rounded" alt="Image" />
-                  </div>
-              </div>
-              <div class="project-item h-100">
-                  <div class="project-img">
-                      <img src="img/sertif_torang.png" class="img-fluid w-100 rounded" alt="Image" />
-                  </div>
-              </div>
-              <div class="project-item h-100">
-                  <div class="project-img">
-                      <img src="img/sertif_evan.jpeg" class="img-fluid w-100 rounded" alt="Image" />
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <!-- certificate End -->
+    <div class="container-fluid  mb-5 pb-5  pt-5" id="certificate">
+        <div class="container">
+            <div class="text-center mx-auto pb-5 " style="max-width: 800px">
+                <h4 class="text-primary">Our Certificate</h4>
+                <h1 class="display-4">Latest our Certificate</h1>
+            </div>
+            <div class="project-carousel owl-carousel " >
+                <div class="project-item h-100 " >
+                    <div class="project-img">
+                        <img src="img/Sertifikat MSIB 6 - Zahidan Ardhiansyah_page-0001.jpg"
+                            class="img-fluid w-100 rounded" alt="Image" />
+                    </div>
+                </div>
+                <div class="project-item h-100 ">
+                    <div class="project-img">
+                        <img src="img/sertif_rifqi.png" class="img-fluid w-100 rounded" alt="Image" />
+                    </div>
+                </div>
+                <div class="project-item h-100">
+                    <div class="project-img">
+                        <img src="img/sertif_okky.jpeg" class="img-fluid w-100 rounded" alt="Image" />
+                    </div>
+                </div>
+                <div class="project-item h-100">
+                    <div class="project-img">
+                        <img src="img/sertif_torang.png" class="img-fluid w-100 rounded" alt="Image" />
+                    </div>
+                </div>
+                <div class="project-item h-100">
+                    <div class="project-img">
+                        <img src="img/sertif_evan.jpeg" class="img-fluid w-100 rounded" alt="Image" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- certificate End -->
 
     <!-- Project Start -->
     <div class="container-fluid blog pb-5 pt-5" id="project">
-      <div class="container pb-5">
-        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px">
-          <h4 class="text-primary">Our Projects</h4>
-          <h1 class="display-4">Explore Our Projects</h1>
+        <div class="container pb-5">
+            <div class="text-center mx-auto pb-5 " data-wow-delay="0.1s" style="max-width: 800px">
+                <h4 class="text-primary">Our Projects</h4>
+                <h1 class="display-4">Explore Our Projects</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png)">
+                        <div class="mb-4">
+                            <h4 class="text-primary mb-2">Web Development</h4>
+                        </div>
+                        <div class="project-img">
+                            <img src="img/moviefinder.png" class="img-fluid w-100 rounded" alt="Image" />
+                            <div class="blog-plus-icon">
+                                <a href="img/moviefinder.png" data-lightbox="blog-1"
+                                    class="btn btn-primary btn-md-square rounded-pill"><i
+                                        class="fas fa-plus fa-1x"></i></a>
+                            </div>
+                        </div>
+                        <div class="my-4">
+                            <a href="#" class="h4">MovieFinder Website</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png)">
+                        <div class="mb-4">
+                            <h4 class="text-primary mb-2">Web Development</h4>
+                        </div>
+                        <div class="project-img">
+                            <img src="img/web_keuangan.png" class="img-fluid w-100 rounded" alt="Image" />
+                            <div class="blog-plus-icon">
+                                <a href="img/web_keuangan.png" data-lightbox="blog-2"
+                                    class="btn btn-primary btn-md-square rounded-pill"><i
+                                        class="fas fa-plus fa-1x"></i></a>
+                            </div>
+                        </div>
+                        <div class="my-4">
+                            <a href="#" class="h4">Website Admin Pengelolaan Keuangan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png)">
+                        <div class="mb-4">
+                            <h4 class="text-primary mb-2">UI/UX Design</h4>
+                        </div>
+                        <div class="project-img">
+                            <img src="img/project_torang.png" class="img-fluid w-100 rounded" alt="Image" />
+                            <div class="blog-plus-icon">
+                                <a href="img/project_torang.png" data-lightbox="blog-3"
+                                    class="btn btn-primary btn-md-square rounded-pill"><i
+                                        class="fas fa-plus fa-1x"></i></a>
+                            </div>
+                        </div>
+                        <div class="my-4">
+                            <a href="#" class="h4">E-commerce UI/UX Design</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png)">
+                        <div class="mb-4">
+                            <h4 class="text-primary mb-2">Graphic Design</h4>
+                        </div>
+                        <div class="project-img">
+                            <img src="img/project_evan.png" class="img-fluid w-100 rounded" alt="Image" />
+                            <div class="blog-plus-icon">
+                                <a href="img/project_evan.png" data-lightbox="blog-3"
+                                    class="btn btn-primary btn-md-square rounded-pill"><i
+                                        class="fas fa-plus fa-1x"></i></a>
+                            </div>
+                        </div>
+                        <div class="my-4">
+                            <a href="#" class="h4">Photoshop Design</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png)">
+                        <div class="mb-4">
+                            <h4 class="text-primary mb-2">Jaringan Komputer</h4>
+                        </div>
+                        <div class="project-img">
+                            <img src="img/project_rifqi1.png" class="img-fluid w-100 rounded" alt="Image" />
+                            <div class="blog-plus-icon">
+                                <a href="img/project_rifqi1.png" data-lightbox="blog-3"
+                                    class="btn btn-primary btn-md-square rounded-pill"><i
+                                        class="fas fa-plus fa-1x"></i></a>
+                            </div>
+                        </div>
+                        <div class="my-4">
+                            <a href="#" class="h4">Pengelolaan Jaringan</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png)">
+                        <div class="mb-4">
+                            <h4 class="text-primary mb-2">Jaringan Komputer</h4>
+                        </div>
+                        <div class="project-img">
+                            <img src="img/project_rifqi2.png" class="img-fluid w-100 rounded" alt="Image" />
+                            <div class="blog-plus-icon">
+                                <a href="img/project_rifqi2.png" data-lightbox="blog-3"
+                                    class="btn btn-primary btn-md-square rounded-pill"><i
+                                        class="fas fa-plus fa-1x"></i></a>
+                            </div>
+                        </div>
+                        <div class="my-4">
+                            <a href="#" class="h4">Pengelolaan Server</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row g-4 justify-content-center">
-          <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png)">
-              <div class="mb-4">
-                <h4 class="text-primary mb-2">Web Development</h4>
-              </div>
-              <div class="project-img">
-                <img src="img/moviefinder.png" class="img-fluid w-100 rounded" alt="Image" />
-                <div class="blog-plus-icon">
-                  <a href="img/moviefinder.png" data-lightbox="blog-1" class="btn btn-primary btn-md-square rounded-pill"><i class="fas fa-plus fa-1x"></i></a>
-                </div>
-              </div>
-              <div class="my-4">
-                <a href="#" class="h4">MovieFinder Website</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png)">
-              <div class="mb-4">
-                <h4 class="text-primary mb-2">Web Development</h4>
-              </div>
-              <div class="project-img">
-                <img src="img/web_keuangan.png" class="img-fluid w-100 rounded" alt="Image" />
-                <div class="blog-plus-icon">
-                  <a href="img/web_keuangan.png" data-lightbox="blog-2" class="btn btn-primary btn-md-square rounded-pill"><i class="fas fa-plus fa-1x"></i></a>
-                </div>
-              </div>
-              <div class="my-4">
-                <a href="#" class="h4">Website Admin Pengelolaan Keuangan</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png)">
-              <div class="mb-4">
-                <h4 class="text-primary mb-2">UI/UX Design</h4>
-              </div>
-              <div class="project-img">
-                <img src="img/project_torang.png" class="img-fluid w-100 rounded" alt="Image" />
-                <div class="blog-plus-icon">
-                  <a href="img/project_torang.png" data-lightbox="blog-3" class="btn btn-primary btn-md-square rounded-pill"><i class="fas fa-plus fa-1x"></i></a>
-                </div>
-              </div>
-              <div class="my-4">
-                <a href="#" class="h4">E-commerce UI/UX Design</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png)">
-              <div class="mb-4">
-                <h4 class="text-primary mb-2">Graphic Design</h4>
-              </div>
-              <div class="project-img">
-                <img src="img/project_evan.png" class="img-fluid w-100 rounded" alt="Image" />
-                <div class="blog-plus-icon">
-                  <a href="img/project_evan.png" data-lightbox="blog-3" class="btn btn-primary btn-md-square rounded-pill"><i class="fas fa-plus fa-1x"></i></a>
-                </div>
-              </div>
-              <div class="my-4">
-                <a href="#" class="h4">Photoshop Design</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png)">
-              <div class="mb-4">
-                <h4 class="text-primary mb-2">Jaringan Komputer</h4>
-              </div>
-              <div class="project-img">
-                <img src="img/project_rifqi1.png" class="img-fluid w-100 rounded" alt="Image" />
-                <div class="blog-plus-icon">
-                  <a href="img/project_rifqi1.png" data-lightbox="blog-3" class="btn btn-primary btn-md-square rounded-pill"><i class="fas fa-plus fa-1x"></i></a>
-                </div>
-              </div>
-              <div class="my-4">
-                <a href="#" class="h4">Pengelolaan Jaringan</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png)">
-              <div class="mb-4">
-                <h4 class="text-primary mb-2">Jaringan Komputer</h4>
-              </div>
-              <div class="project-img">
-                <img src="img/project_rifqi2.png" class="img-fluid w-100 rounded" alt="Image" />
-                <div class="blog-plus-icon">
-                  <a href="img/project_rifqi2.png" data-lightbox="blog-3" class="btn btn-primary btn-md-square rounded-pill"><i class="fas fa-plus fa-1x"></i></a>
-                </div>
-              </div>
-              <div class="my-4">
-                <a href="#" class="h4">Pengelolaan Server</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
     <!-- Project End -->
 
     <!-- Team Start -->
-   <div class="container-fluid team pb-5" id="team">
-    <div class="container pb-5">
-        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px">
-            <h4 class="text-primary">Our Team</h4>
-            <h1 class="display-4">Our Technosphere Company Dedicated Team Member</h1>
-        </div>
-        <div class="row g-4 justify-content-center">
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="team-item rounded">
-                    <div class="team-img">
-                        <img src="img/Okky Dhelfilano.jpg" class="img-fluid rounded-top" alt="Image" />
-                    </div>
-                    <div class="team-content bg-dark text-center rounded-bottom p-4" style="height: 135px;">
-                        <div class="team-content-inner rounded-bottom">
-                            <h4 class="text-white">Okky Dhelfilano</h4>
-                            <p class="text-muted mb-0">Project Manager</p>
+    <div class="container-fluid team pb-5" id="team">
+        <div class="container pb-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px">
+                <h4 class="text-primary">Our Team</h4>
+                <h1 class="display-4">Our Technosphere Company Dedicated Team Member</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item rounded">
+                        <div class="team-img">
+                            <img src="img/Fauzan_Evan.jpg" class="img-fluid rounded-top" alt="Image" />
+                        </div>
+                        <div class="team-content bg-dark text-center rounded-bottom p-4">
+                            <div class="team-content-inner rounded-bottom">
+                                <h4 class="text-white">Fauzan Evan</h4>
+                                <p class="text-muted mb-0">Designer & Technical Writer</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="team-item rounded">
-                    <div class="team-img">
-                        <img src="img/Fauzan_Evan.jpg" class="img-fluid rounded-top" alt="Image" />
-                    </div>
-                    <div class="team-content bg-dark text-center rounded-bottom p-4">
-                        <div class="team-content-inner rounded-bottom">
-                            <h4 class="text-white">Fauzan Evan</h4>
-                            <p class="text-muted mb-0">Designer & Technical Writer</p>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item rounded">
+                        <div class="team-img">
+                            <img src="img/Samuel Torang.jpg" class="img-fluid rounded-top" alt="Image" />
+                        </div>
+                        <div class="team-content bg-dark text-center rounded-bottom p-4">
+                            <div class="team-content-inner rounded-bottom">
+                                <h4 class="text-white">Samuel Torang</h4>
+                                <p class="text-muted mb-0">Designer & Tester</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2 wow fadeInUp"  data-wow-delay="0.5s">
-                <div class="team-item rounded">
-                    <div class="team-img">
-                        <img src="img/Rifqi Arief.jpg" class="img-fluid rounded-top" alt="Image" />
-                    </div>
-                    <div class="team-content bg-dark text-center rounded-bottom p-4" style="height: 135px;">
-                        <div class="team-content-inner rounded-bottom">
-                            <h4 class="text-white">Rifqi Arief</h4>
-                            <p class="text-muted mb-0">Analis</p>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item rounded">
+                        <div class="team-img">
+                            <img src="img/Okky Dhelfilano.jpg" class="img-fluid rounded-top" alt="Image" />
+                        </div>
+                        <div class="team-content bg-dark text-center rounded-bottom p-4" style="height: 135px;">
+                            <div class="team-content-inner rounded-bottom">
+                                <h4 class="text-white">Okky Dhelfilano</h4>
+                                <p class="text-muted mb-0">Project Manager</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2 wow fadeInUp" data-wow-delay="0.7s">
-                <div class="team-item rounded">
-                    <div class="team-img">
-                        <img src="img/Samuel Torang.jpg" class="img-fluid rounded-top" alt="Image" />
-                    </div>
-                    <div class="team-content bg-dark text-center rounded-bottom p-4">
-                        <div class="team-content-inner rounded-bottom">
-                            <h4 class="text-white">Samuel Torang</h4>
-                            <p class="text-muted mb-0">Designer & Tester</p>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item rounded">
+                        <div class="team-img">
+                            <img src="img/Rifqi Arief.jpg" class="img-fluid rounded-top" alt="Image" />
+                        </div>
+                        <div class="team-content bg-dark text-center rounded-bottom p-4" style="height: 135px;">
+                            <div class="team-content-inner rounded-bottom">
+                                <h4 class="text-white">Rifqi Arief</h4>
+                                <p class="text-muted mb-0">Analis</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2 wow fadeInUp" data-wow-delay="0.9s">
-                <div class="team-item rounded">
-                    <div class="team-img">
-                        <img src="img/Zahidan Ardhiansyah.jpg" class="img-fluid rounded-top" alt="Image" />
-                    </div>
-                    <div class="team-content bg-dark text-center rounded-bottom p-4">
-                        <div class="team-content-inner rounded-bottom">
-                            <h4 class="text-white">Zahidan Ardhiansyah</h4>
-                            <p class="text-muted mb-0">Programmer</p>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 wow fadeInUp" data-wow-delay="0.9s">
+                    <div class="team-item rounded">
+                        <div class="team-img">
+                            <img src="img/Zahidan Ardhiansyah.jpg" class="img-fluid rounded-top" alt="Image" />
+                        </div>
+                        <div class="team-content bg-dark text-center rounded-bottom p-4">
+                            <div class="team-content-inner rounded-bottom">
+                                <h4 class="text-white">Zahidan Ardhiansyah</h4>
+                                <p class="text-muted mb-0">Programmer</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
     <!-- Team End -->
 
-    <!-- map Start -->
-    <div class="container-fluid testimonial bg-light py-5" id="location">
-      <div class="container" style="padding-bottom: 30px; padding-top: 10px">
-        <div class="pb-5">
-          <h4 class="text-primary text-center">Our Location</h4>
-          <h1 class="display-4 text-center">We look forward to welcoming you!</h1>
-        </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.182474759328!2d106.9410328!3d-6.239665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698dc8527fa7d3%3A0xe96c9392b8342350!2sKomplek%20PEMDA%20DKI%20Blok%20Q6%20No.%201-2!5e0!3m2!1sid!2sid!4v1730073970321!5m2!1sid!2sid"
-          width="100%"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-    </div>
-    <!-- map End -->
+    <!-- Contact Start -->
+    <div class="container-fluid contact bg-light py-5" id="contact">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="contact-item">
+                        <div class="pb-5">
+                            <h4 class="text-primary">Contact Us</h4>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="bg-primary btn-lg-square rounded-circle p-4"><i
+                                    class="fa fa-home text-white"></i></div>
+                            <div class="ms-4">
+                                <h4>Addresses</h4>
+                                <p class="mb-0">Komplek Pemda DKI, Blok B6/17, Duren Sawit, Jakarta Timur, 13450</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="bg-primary btn-lg-square rounded-circle p-2"><i
+                                    class="fa fa-phone-alt text-white"></i></div>
+                            <div class="ms-4">
+                                <h4>Mobile</h4>
+                                <p class="mb-0">+62812-9526-4742</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="bg-primary btn-lg-square rounded-circle p-2"><i
+                                    class="fa fa-envelope-open text-white"></i></div>
+                            <div class="ms-4">
+                                <h4>Email</h4>
+                                <p class="mb-0">technosphere@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                    <form action="https://api.web3forms.com/submit" method="POST">
 
-    <!-- FAQ Start -->
-    <div class="container-fluid faq py-5" id="faqs">
-      <div class="container py-5">
-        <div class="row g-5 align-items-center">
-          <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
-            <div class="pb-5">
-              <h4 class="text-primary">FAQs</h4>
-              <h1 class="display-4">Get the Answers to Common Questions</h1>
+                        <input type="hidden" name="access_key" value="a3f4fddb-5e9a-467b-81cc-e2db7ade1dfa">
+                        <div class="row g-3">
+                            <div class="col-lg-12 col-xl-6">
+                                <div class="form-floating">
+                                    <input class="form-control" type="text" type="text" name="name"
+                                        placeholder="Your Name" required>
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-xl-6">
+                                <div class="form-floating">
+                                    <input class="form-control" type="email" type="email" name="email"
+                                        placeholder="Your Email" required>
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-xl-6">
+                                <div class="form-floating">
+                                    <input class="form-control" type="text" name="Phone Number" placeholder="Phone"
+                                        required>
+                                    <label for="phone">Your Phone</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-xl-6">
+                                <div class="form-floating">
+                                    <input type="text" name="Subject" class="form-control" placeholder="Project">
+                                    <label for="project">Your Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" name="message"
+                                        required style="height: 160px"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="rounded h-100">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.182474759328!2d106.9410328!3d-6.239665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698dc8527fa7d3%3A0xe96c9392b8342350!2sKomplek%20PEMDA%20DKI%20Blok%20Q6%20No.%201-2!5e0!3m2!1sid!2sid!4v1730073970321!5m2!1sid!2sid"
+                            width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             </div>
-            <div class="accordion bg-light rounded p-4" id="accordionExample">
-              <div class="accordion-item border-0 mb-4">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button text-dark fs-5 fw-bold rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseTOne">
-                    What Does a Financial Advisor Do?
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body my-2">
-                    <h5>Dolor sit amet consectetur adipisicing elit.</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nemo impedit, sapiente quis illo quia nulla atque maxime fuga minima ipsa quae cum consequatur, sit, delectus exercitationem odit officiis maiores! Neque,
-                      quidem corrupti modi architecto eos saepe incidunt dignissimos rerum.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item border-0 mb-4">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    What industries do you specialize in?
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body my-2">
-                    <h5>Dolor sit amet consectetur adipisicing elit.</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nemo impedit, sapiente quis illo quia nulla atque maxime fuga minima ipsa quae cum consequatur, sit, delectus exercitationem odit officiis maiores! Neque,
-                      quidem corrupti modi architecto eos saepe incidunt dignissimos rerum.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item border-0 mb-4">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Can you guarantee for growth?
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                  <div class="accordion-body my-2">
-                    <h5>Dolor sit amet consectetur adipisicing elit.</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nemo impedit, sapiente quis illo quia nulla atque maxime fuga minima ipsa quae cum consequatur, sit, delectus exercitationem odit officiis maiores! Neque,
-                      quidem corrupti modi architecto eos saepe incidunt dignissimos rerum.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item border-0 mb-0">
-                <h2 class="accordion-header" id="headingFour">
-                  <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    What makes your business plans so special?
-                  </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                  <div class="accordion-body my-2">
-                    <h5>Dolor sit amet consectetur adipisicing elit.</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nemo impedit, sapiente quis illo quia nulla atque maxime fuga minima ipsa quae cum consequatur, sit, delectus exercitationem odit officiis maiores! Neque,
-                      quidem corrupti modi architecto eos saepe incidunt dignissimos rerum.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
-            <div class="faq-img RotateMoveRight rounded">
-              <img src="img/faq-img.jpg" class="img-fluid rounded w-100" alt="Image" />
-              <a class="faq-btn btn btn-primary rounded-pill text-white py-3 px-5" href="#">Read More Q & A <i class="fas fa-arrow-right ms-2"></i></a>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-    <!-- FAQ End -->
-
-    <!-- Footer Start -->
-    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
-      <div class="container py-5">
-        <div class="row g-5">
-          <div class="col-md-6 col-lg-6">
-            <div class="footer-item d-flex flex-column">
-              <h4 class="text-white mb-4">Contact Info</h4>
-              <a href=""><i class="fa fa-map-marker-alt me-2"></i> Komplek Pemda DKI, Blok B6/17, Duren Sawit, Jakarta Timur, 13450</a>
-              <a href=""><i class="fas fa-envelope me-2"></i> technosphere@gmail.com</a>
-              <a href=""><i class="fas fa-phone me-2"></i> +62812-9526-4742</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Footer End -->
+    <!-- Contact End -->
 
     <!-- Copyright Start -->
-
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="text-center mb-md-0">
+                    <i class="fas fa-copyright text-light me-2"></i>2024 Technosphere| All right reserved.</span>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Copyright End -->
 
     <!-- Back to Top -->
@@ -703,5 +666,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-  </body>
+</body>
+
 </html>
